@@ -1,0 +1,13 @@
+{
+  "name": "btw-e2e",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "testcafe firefox:headless test.js"
+  },
+  "devDependencies": {
+    "@testing-library/testcafe": "^2.1.1",
+    "faker": "^4.1.0",
+    "testcafe": "^1.5.0",
+    "dotenv": "^7.0.0"
+  }
+}
