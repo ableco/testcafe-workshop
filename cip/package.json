@@ -1,14 +1,12 @@
 {
   "name": "cip-e2e",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "testcafe firefox:headless test.js"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
+    "@testing-library/testcafe": "^2.1.1",
+    "faker": "^4.1.0",
     "testcafe": "^1.5.0"
   }
 }
