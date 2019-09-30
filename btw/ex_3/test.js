@@ -5,12 +5,11 @@ import {
   addTestcafeTestingLibrary,
 } from '@testing-library/testcafe'
 
-require("dotenv").config();
 const randomEmail = require("faker").internet.email();
 
 fixture("Fixture").beforeEach(async t => {
   await addTestcafeTestingLibrary(t);
-}).page(process.env.APP_URL);
+}).page("https://btw-braver-staging.herokuapp.com");
 
 test("Register a member", async t => {
   await t

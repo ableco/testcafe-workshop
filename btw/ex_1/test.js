@@ -1,9 +1,8 @@
 import { Selector } from "testcafe";
 
-require("dotenv").config();
 const randomEmail = require("faker").internet.email();
 
-fixture("Fixture").page(process.env.APP_URL);
+fixture("Fixture").page("https://btw-braver-staging.herokuapp.com");
 
 test("Register a member", async t => {
   await t

@@ -1,10 +1,9 @@
 import TestPMO from "./test_pmo";
 
-require("dotenv").config();
 const randomEmail = require("faker").internet.email();
 const pmo = new TestPMO();
 
-fixture("Fixture").page(process.env.APP_URL);;
+fixture("Fixture").page("https://btw-braver-staging.herokuapp.com");
 
 test("Register a member", async t => {
   await t
