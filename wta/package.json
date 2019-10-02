@@ -1,0 +1,17 @@
+{
+    "name": "wta-testcafe",
+    "version": "1.0.0",
+    "description": "End-to-end tests for WTA using Testcafe",
+    "scripts": {
+      "test": "testcafe chrome:headless 'tests/' -q -e -S -s 'artifacts/screenshots'"
+      },
+    "devDependencies": {
+      "dotenv": "^7.0.0",
+      "faker": "^4.1.0",
+      "testcafe": "^1.1.0"
+    },
+    "dependencies": {
+      "testcafe-react-selectors": "^3.1.0"
+    }
+  }
+  

@@ -1,0 +1,13 @@
+{
+    "name": "mighty-testcafe",
+    "version": "1.0.0",
+    "description": "End-to-end tests for Mighty using Testcafe",
+    "scripts": {
+      "test": "testcafe chrome:headless 'tests/**/*.js' -q -S -s 'artifacts/screenshots'"
+     },
+    "devDependencies": {
+      "axios": "^0.18.0",
+      "faker": "^4.1.0",
+      "testcafe": "^1.1.0"
+    }
+  }
